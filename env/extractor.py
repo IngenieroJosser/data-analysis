@@ -1,8 +1,16 @@
 import time
 import csv
+import logging
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+# Configuración del logging
+logging.basicConfig(
+    filename='extraccion_productos.log',  # Archivo donde se guardarán los logs
+    level=logging.INFO,  # Nivel de los logs (INFO para seguimiento del proceso)
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Formato de los logs
+)
 
 # Inicializar el navegador Microsoft Edge
 driver = webdriver.Edge()
@@ -22,6 +30,7 @@ urls = [
 productos = []  # Lista para almacenar los productos
 
 for url in urls:
+    logging.info(f'Extrayendo productos de la URL: {url}')  # Log de inicio de extracción
     driver.get(url)
     time.sleep(3)  # Esperar que cargue la página
 
@@ -57,21 +66,26 @@ for url in urls:
                 productos_extraidos += 1  # Aumentar el contador
 
             if productos_extraidos >= 1000:
+                logging.info(f'Se ha alcanzado el límite de 1000 productos en la URL: {url}')
                 break
 
         # Verificar si hemos llegado al final de la página
         new_height = driver.execute_script("return document.body.scrollHeight")
         if new_height == last_height:
+            logging.info(f'No se encontraron más productos en la URL: {url}')
             break
         last_height = new_height
 
 # Cerrar el navegador Edge
 driver.quit()
+logging.info('Extracción completada, cerrando el navegador.')
 
 # Guardar los productos en un archivo CSV
-with open('productosE-commerce_d1.csv', mode='w', newline='', encoding='utf-8') as file:
+csv_file = 'productosE-commerce_d1.csv'
+with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Nombre', 'Precio', 'Descripción', 'Imagen', 'Posición', 'Paginación'])  # Encabezados
     writer.writerows(productos)  # Escribir datos extraídos
 
-print("Los productos han sido extraídos y guardados en 'productos_d1.csv'")
+logging.info(f'Los productos han sido extraídos y guardados en "{csv_file}"')
+print(f"Los productos han sido extraídos y guardados en '{csv_file}'")

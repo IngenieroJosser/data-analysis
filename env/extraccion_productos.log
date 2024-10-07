@@ -1,0 +1,16 @@
+2024-10-07 10:03:46,958 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS
+2024-10-07 10:04:12,203 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS
+2024-10-07 10:04:12,203 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/congelados/CONGELADOS
+2024-10-07 10:04:26,322 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/congelados/CONGELADOS
+2024-10-07 10:04:26,322 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/alimentos-y-despensa/ALIMENTOS%20Y%20DESPENSA
+2024-10-07 10:05:23,095 - INFO - Se ha alcanzado el límite de 1000 productos en la URL: https://domicilios.tiendasd1.com/ca/alimentos-y-despensa/ALIMENTOS%20Y%20DESPENSA
+2024-10-07 10:05:23,356 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/aseo-hogar/ASEO%20HOGAR
+2024-10-07 10:05:45,711 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/aseo-hogar/ASEO%20HOGAR
+2024-10-07 10:05:45,711 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/aseo-y-cuidado-personal/ASEO%20Y%20CUIDADO%20PERSONAL
+2024-10-07 10:06:06,074 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/aseo-y-cuidado-personal/ASEO%20Y%20CUIDADO%20PERSONAL
+2024-10-07 10:06:06,075 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/lacteos/LÁCTEOS
+2024-10-07 10:06:24,584 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/lacteos/LÁCTEOS
+2024-10-07 10:06:24,584 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS
+2024-10-07 10:06:37,615 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS
+2024-10-07 10:06:43,229 - INFO - Extracción completada, cerrando el navegador.
+2024-10-07 10:06:43,258 - INFO - Los productos han sido extraídos y guardados en "productos_d1.csv"
