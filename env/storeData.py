@@ -18,7 +18,7 @@ try:
         user='root',              # Cambia por tu usuario de MySQL
         password=''               # Cambia por tu contraseña de MySQL
     )
-    cursor = connection.cursor()
+    cursor = connection.cursor() 
 
     # Crear tabla si no existe
     cursor.execute('''
