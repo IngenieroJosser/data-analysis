@@ -14,3 +14,161 @@
 2024-10-07 10:06:37,615 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS
 2024-10-07 10:06:43,229 - INFO - Extracción completada, cerrando el navegador.
 2024-10-07 10:06:43,258 - INFO - Los productos han sido extraídos y guardados en "productos_d1.csv"
+2024-10-08 16:37:45,736 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS
+2024-10-08 16:41:26,637 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS
+2024-10-08 16:41:58,852 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS
+2024-10-08 16:41:58,852 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/congelados/CONGELADOS
+2024-10-08 16:42:12,971 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/congelados/CONGELADOS
+2024-10-08 16:42:12,972 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/alimentos-y-despensa/ALIMENTOS%20Y%20DESPENSA
+2024-10-08 16:44:15,269 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/alimentos-y-despensa/ALIMENTOS%20Y%20DESPENSA
+2024-10-08 16:44:15,289 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/aseo-hogar/ASEO%20HOGAR
+2024-10-08 16:44:58,550 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/aseo-hogar/ASEO%20HOGAR
+2024-10-08 16:44:58,558 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/aseo-y-cuidado-personal/ASEO%20Y%20CUIDADO%20PERSONAL
+2024-10-08 16:45:32,525 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/aseo-y-cuidado-personal/ASEO%20Y%20CUIDADO%20PERSONAL
+2024-10-08 16:45:32,525 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/lacteos/LÁCTEOS
+2024-10-08 16:45:53,946 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/lacteos/LÁCTEOS
+2024-10-08 16:45:53,946 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS
+2024-10-08 16:46:33,202 - INFO - No se encontraron más productos en la URL: https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS
+2024-10-08 16:46:40,287 - INFO - Extracción completada, cerrando el navegador.
+2024-10-08 16:46:40,336 - INFO - Los productos han sido extraídos y guardados en "productosExtraidos_D1.csv"
+2024-10-08 17:17:36,990 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS
+2024-10-08 17:18:02,286 - ERROR - Error al acceder a https://domicilios.tiendasd1.com/ca/extraordinarios/EXTRAORDINARIOS: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF3CF25+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB1BBCE4+1897876]
+	(No symbol) [0x00007FF7BACEF1CC]
+	(No symbol) [0x00007FF7BAD3672E]
+	(No symbol) [0x00007FF7BAD367B5]
+	(No symbol) [0x00007FF7BAD74ED7]
+	(No symbol) [0x00007FF7BAD57F8F]
+	(No symbol) [0x00007FF7BAD2C09D]
+	(No symbol) [0x00007FF7BAD72887]
+	(No symbol) [0x00007FF7BAD57BB3]
+	(No symbol) [0x00007FF7BAD2B5AC]
+	(No symbol) [0x00007FF7BAD2AA8D]
+	(No symbol) [0x00007FF7BAD2B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E9E34+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE6095F+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE53103+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E8BBD+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED9791+327745]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5C14+312516]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5D49+312825]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAECC2BC+273260]
+	BaseThreadInitThunk [0x00007FFE02507344+20]
+	RtlUserThreadStart [0x00007FFE02F826B1+33]
+
+2024-10-08 17:18:02,286 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/congelados/CONGELADOS
+2024-10-08 17:18:21,378 - ERROR - Error al acceder a https://domicilios.tiendasd1.com/ca/congelados/CONGELADOS: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF3CF25+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB1BBCE4+1897876]
+	(No symbol) [0x00007FF7BACEF1CC]
+	(No symbol) [0x00007FF7BAD3672E]
+	(No symbol) [0x00007FF7BAD367B5]
+	(No symbol) [0x00007FF7BAD74ED7]
+	(No symbol) [0x00007FF7BAD57F8F]
+	(No symbol) [0x00007FF7BAD2C09D]
+	(No symbol) [0x00007FF7BAD72887]
+	(No symbol) [0x00007FF7BAD57BB3]
+	(No symbol) [0x00007FF7BAD2B5AC]
+	(No symbol) [0x00007FF7BAD2AA8D]
+	(No symbol) [0x00007FF7BAD2B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E9E34+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE6095F+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE53103+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E8BBD+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED9791+327745]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5C14+312516]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5D49+312825]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAECC2BC+273260]
+	BaseThreadInitThunk [0x00007FFE02507344+20]
+	RtlUserThreadStart [0x00007FFE02F826B1+33]
+
+2024-10-08 17:18:21,378 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/alimentos-y-despensa/ALIMENTOS%20Y%20DESPENSA
+2024-10-08 17:18:38,380 - ERROR - Error al acceder a https://domicilios.tiendasd1.com/ca/alimentos-y-despensa/ALIMENTOS%20Y%20DESPENSA: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF3CF25+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB1BBCE4+1897876]
+	(No symbol) [0x00007FF7BACEF1CC]
+	(No symbol) [0x00007FF7BAD3672E]
+	(No symbol) [0x00007FF7BAD367B5]
+	(No symbol) [0x00007FF7BAD74ED7]
+	(No symbol) [0x00007FF7BAD57F8F]
+	(No symbol) [0x00007FF7BAD2C09D]
+	(No symbol) [0x00007FF7BAD72887]
+	(No symbol) [0x00007FF7BAD57BB3]
+	(No symbol) [0x00007FF7BAD2B5AC]
+	(No symbol) [0x00007FF7BAD2AA8D]
+	(No symbol) [0x00007FF7BAD2B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E9E34+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE6095F+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE53103+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E8BBD+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED9791+327745]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5C14+312516]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5D49+312825]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAECC2BC+273260]
+	BaseThreadInitThunk [0x00007FFE02507344+20]
+	RtlUserThreadStart [0x00007FFE02F826B1+33]
+
+2024-10-08 17:18:38,380 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/aseo-hogar/ASEO%20HOGAR
+2024-10-08 17:19:05,844 - INFO - No se encontraron más productos al hacer scroll en la URL: https://domicilios.tiendasd1.com/ca/aseo-hogar/ASEO%20HOGAR
+2024-10-08 17:19:05,846 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/aseo-y-cuidado-personal/ASEO%20Y%20CUIDADO%20PERSONAL
+2024-10-08 17:19:38,753 - INFO - No se encontraron más productos al hacer scroll en la URL: https://domicilios.tiendasd1.com/ca/aseo-y-cuidado-personal/ASEO%20Y%20CUIDADO%20PERSONAL
+2024-10-08 17:19:38,754 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/lacteos/LÁCTEOS
+2024-10-08 17:19:56,915 - ERROR - Error al acceder a https://domicilios.tiendasd1.com/ca/lacteos/LÁCTEOS: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF3CF25+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB1BBCE4+1897876]
+	(No symbol) [0x00007FF7BACEF1CC]
+	(No symbol) [0x00007FF7BAD3672E]
+	(No symbol) [0x00007FF7BAD367B5]
+	(No symbol) [0x00007FF7BAD74ED7]
+	(No symbol) [0x00007FF7BAD57F8F]
+	(No symbol) [0x00007FF7BAD2C09D]
+	(No symbol) [0x00007FF7BAD72887]
+	(No symbol) [0x00007FF7BAD57BB3]
+	(No symbol) [0x00007FF7BAD2B5AC]
+	(No symbol) [0x00007FF7BAD2AA8D]
+	(No symbol) [0x00007FF7BAD2B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E9E34+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE6095F+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE53103+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E8BBD+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED9791+327745]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5C14+312516]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5D49+312825]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAECC2BC+273260]
+	BaseThreadInitThunk [0x00007FFE02507344+20]
+	RtlUserThreadStart [0x00007FFE02F826B1+33]
+
+2024-10-08 17:19:56,916 - INFO - Extrayendo productos de la URL: https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS
+2024-10-08 17:20:23,946 - ERROR - Error al acceder a https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF3CF25+12997]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB1BBCE4+1897876]
+	(No symbol) [0x00007FF7BACEF1CC]
+	(No symbol) [0x00007FF7BAD3672E]
+	(No symbol) [0x00007FF7BAD367B5]
+	(No symbol) [0x00007FF7BAD74ED7]
+	(No symbol) [0x00007FF7BAD57F8F]
+	(No symbol) [0x00007FF7BAD2C09D]
+	(No symbol) [0x00007FF7BAD72887]
+	(No symbol) [0x00007FF7BAD57BB3]
+	(No symbol) [0x00007FF7BAD2B5AC]
+	(No symbol) [0x00007FF7BAD2AA8D]
+	(No symbol) [0x00007FF7BAD2B171]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E9E34+1038052]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE6095F+56655]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7BAE53103+1267]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF7BB0E8BBD+1033325]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED9791+327745]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5C14+312516]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAED5D49+312825]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7BAECC2BC+273260]
+	BaseThreadInitThunk [0x00007FFE02507344+20]
+	RtlUserThreadStart [0x00007FFE02F826B1+33]
+
+2024-10-08 17:20:27,369 - INFO - Extracción completada, cerrando el navegador.
+2024-10-08 17:20:27,391 - INFO - Los productos han sido extraídos y guardados en "productosExtraidos_D1.csv"
