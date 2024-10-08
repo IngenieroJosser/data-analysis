@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler  # Importar el escalador
 from sklearn.cluster import KMeans  # Importar KMeans
 import matplotlib.pyplot as plt  # Importar matplotlib para visualización
 
-# Conectar a la base de datos
+# Conecto a la base de datos
 connection = mysql.connector.connect(
     host='localhost',
     database='dataLab',

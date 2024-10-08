@@ -3,24 +3,24 @@ import mysql.connector  # O puedes usar sqlite3 si decides SQLite
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
-# Inicializar el navegador Microsoft Edge
+# Aqui inicializo el navegador Microsoft Edge
 driver = webdriver.Edge()
 
-# Inicializar la conexión a la base de datos
+# Inicializo la conexión a la base de datos
 connection = None
 cursor = None
 
 try:
-    # Conectar a la base de datos MySQL
+    # Me conecto a la base de datos MySQL
     connection = mysql.connector.connect(
-        host='localhost',          # Ejemplo: 'localhost'
-        database='datalab',       # Cambia por tu base de datos
-        user='root',              # Cambia por tu usuario de MySQL
-        password=''               # Cambia por tu contraseña de MySQL
+        host='localhost',
+        database='datalab',
+        user='root',
+        password=''
     )
     cursor = connection.cursor() 
 
-    # Crear tabla si no existe
+    # Creo tabla si no existe
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS productos (
         id INT AUTO_INCREMENT PRIMARY KEY,
@@ -44,7 +44,7 @@ try:
         "https://domicilios.tiendasd1.com/ca/mascotas/MASCOTAS"
     ]
 
-    # Recorrer todas las URLs
+    # Recorro todas las URLs
     for url in urls:
         driver.get(url)
         time.sleep(3)
