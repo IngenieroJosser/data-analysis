@@ -4,6 +4,19 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+def mejorar_imagen(image):
+    """
+    Mejora la imagen ajustando el brillo y el contraste.
+    
+    Args:
+        image (ndarray): La imagen original en escala de grises.
+        
+    Returns:
+        ndarray: La imagen mejorada.
+    """
+    # Aumentar el contraste usando ecualización de histograma
+    return cv2.equalizeHist(image)
+
 def procesar_imagen(ruta_imagen):
     """
     Procesa una imagen para extraer puntos de datos de un gráfico de línea.
@@ -16,6 +29,9 @@ def procesar_imagen(ruta_imagen):
     """
     # Cargar la imagen en escala de grises
     image = cv2.imread(ruta_imagen, cv2.IMREAD_GRAYSCALE)
+
+    # Mejora de la imagen
+    image = mejorar_imagen(image)
 
     # Preprocesamiento de la imagen
     blurred = cv2.GaussianBlur(image, (5, 5), 0)

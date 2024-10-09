@@ -3,23 +3,24 @@ import mysql.connector  # Importa el conector MySQL para conectarse a la base de
 import matplotlib.pyplot as plt  # Importa matplotlib para visualización de gráficos
 import seaborn as sns  # Importa seaborn para visualización de datos
 
-# Conectar a la base de datos
+# Aqui me conecto a la base de datos
 connection = mysql.connector.connect(
-    host='localhost',          # Dirección del host de la base de datos
-    database='dataLab',       # Nombre de la base de datos
-    user='root',              # Usuario de la base de datos
-    password=''               # Contraseña de la base de datos
+    host='localhost',
+    database='dataLab',
+    user='root',
+    password=''
 )
 
-# Leer datos de la tabla 'productos' en la base de datos
+# Leo datos de la tabla 'productos' en la base de datos
 query = "SELECT nombre, precio, descripcion, imagen, posicion, paginacion FROM productos"
 df = pd.read_sql(query, connection)  # Cargar los datos en un DataFrame de pandas
 
+
 # Análisis básico de precios
-# Convertir la columna de precios a tipo numérico (removiendo símbolos y comas)
+# Convierto la columna de precios a tipo numérico (removiendo símbolos y comas)
 df['precio'] = df['precio'].str.replace('$', '', regex=False).str.replace('.', '', regex=False).str.replace(',', '.', regex=False).astype(float)
 
-# Calcular estadísticas descriptivas de los precios
+# Calculo estadísticas descriptivas de los precios
 precio_min = df['precio'].min()  # Precio mínimo
 precio_max = df['precio'].max()  # Precio máximo
 precio_medio = df['precio'].mean()  # Precio promedio
