@@ -1,0 +1,30 @@
+# Ignorar carpetas de scripts o archivos generados
+/Scripts
+
+# Ignorar variables de entorno o archivos sensibles
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de logs
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos generados por el sistema operativo
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignorar archivos de configuración de editores
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar otros archivos binarios o generados
+*.exe
+*.dll
+*.so
+*.pyc
+*.pyo
+__pycache__/
