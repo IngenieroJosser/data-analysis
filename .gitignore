@@ -25,3 +25,5 @@ Thumbs.db  # Windows
 *.pyc
 *.pyo
 __pycache__/
+
+.pyvenv.cfg
