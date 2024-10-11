@@ -1,34 +1,36 @@
-import pandas as pd
-import requests
+import cv2
+import numpy as np
 import os
+import matplotlib.pyplot as plt
 
-# Leer el CSV en un DataFrame
-df = pd.read_csv('productosE-commerce_d1.csv')
+carpeta_imagenes = 'imagenes-linea'
 
-# Crear una carpeta para almacenar las imágenes
-os.makedirs('imagenes', exist_ok=True)
+def extraer_puntos_grafico(imagen_path):
+    imagen = cv2.imread(imagen_path, cv2.IMREAD_GRAYSCALE)
+    imagen_suavizada = cv2.GaussianBlur(imagen, (5, 5), 0)
+    bordes = cv2.Canny(imagen_suavizada, 50, 150)
+    lineas = cv2.HoughLinesP(bordes, rho=1, theta=np.pi/180, threshold=100, minLineLength=50, maxLineGap=10)
+    puntos = []
+    if lineas is not None:
+        for linea in lineas:
+            for x1, y1, x2, y2 in linea:
+                puntos.append((x1, y1))
+                puntos.append((x2, y2))
+    return puntos
 
-# Función para descargar una imagen
-def descargar_imagen(url, nombre):
-    try:
-        respuesta = requests.get(url, stream=True)
-        if respuesta.status_code == 200:
-            ruta_imagen = os.path.join('imagenes', nombre)
-            with open(ruta_imagen, 'wb') as f:
-                f.write(respuesta.content)
-            print(f"Imagen guardada: {nombre}")
-        else:
-            print(f"No se pudo descargar la imagen: {url}")
-    except Exception as e:
-        print(f"Error al descargar la imagen: {url} - {e}")
+def mostrar_puntos(puntos, imagen_path):
+    imagen_color = cv2.imread(imagen_path)
+    puntos = np.array(puntos)
+    plt.imshow(cv2.cvtColor(imagen_color, cv2.COLOR_BGR2RGB))
+    if puntos.size > 0:
+        plt.scatter(puntos[:, 0], puntos[:, 1], color='red', s=10)
+    plt.title('Puntos detectados en el gráfico')
+    plt.show()
 
-# Recorrer el DataFrame para descargar las imágenes
-for index, row in df.iterrows():
-    nombre_producto = row['Nombre']
-    url_imagen = row['Imagen']
-    
-    if url_imagen != "Sin imagen":  # Verificar que haya una URL válida
-        nombre_archivo = f"{nombre_producto}.jpg".replace(" ", "_")
-        descargar_imagen(url_imagen, nombre_archivo)
-    else:
-        print(f"No hay imagen para: {nombre_producto}")
+for imagen_nombre in os.listdir(carpeta_imagenes):
+    imagen_path = os.path.join(carpeta_imagenes, imagen_nombre)
+    puntos = extraer_puntos_grafico(imagen_path)
+    mostrar_puntos(puntos, imagen_path)
+    print(f"Puntos extraídos de {imagen_nombre}:")
+    for punto in puntos:
+        print(punto)
