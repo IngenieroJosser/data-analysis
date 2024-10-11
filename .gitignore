@@ -14,7 +14,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Ignorar archivos generados por el sistema operativo
-.DS_Store  # macOS
 Thumbs.db  # Windows
 
 # Ignorar archivos de configuración de editores
